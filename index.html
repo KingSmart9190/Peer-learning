@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite the Beat - Music and Food Festival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="DStv Delicious International Food and Music Festival 2019 Aftermovie - DStv Delicious International Food & Music Festival (1080p, h264).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <header>
+        <button id="menu-toggle">☰ Menu</button>
+        <img src="Images/Bite the Beat music and food festival logo.png" alt="Bite the Beat Logo" class="logo">
+        <h1>Bite the Beat</h1>
+        <p>Welcome to Bite the Beat! Join us for a sensational fusion of music and food.</p>
+        <p>Date: [Event Date] | Location: [Event Location]</p>
+        <button onclick="window.location.href='#tickets'">Get Tickets</button>
+    </header>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#performers">Performers & Chefs</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>Bite the Beat is a vibrant celebration where music and culinary delights come together. Experience live performances from top artists while enjoying gourmet food from renowned chefs.</p>
+    </section>
+    <section id="schedule">
+        <h2>Schedule</h2>
+        <p>The event starts at 7 PM GMT. Here is the detailed schedule:</p>
+        <ul>
+            <li>7:00 PM - Opening Ceremony</li>
+            <li>7:30 PM - Performance by Sarkodie</li>
+            <li>8:30 PM - Culinary Show by Chef Gordon Ramsay</li>
+            <li>9:30 PM - Performance by Stonebwoy</li>
+            <li>10:30 PM - Magic Show by David Blaine</li>
+            <li>11:30 PM - Performance by Ed Sheeran</li>
+            <li>12:30 AM - Closing Ceremony</li>
+        </ul>
+    </section>
+    <section id="performers">
+        <h2>Performers & Chefs</h2>
+        <p>We have an exciting lineup of performers and chefs for you:</p>
+        <ul>
+            <li>Sarkodie (Ghanaian Musician)</li>
+            <li>Stonebwoy (Ghanaian Musician)</li>
+            <li>Ed Sheeran (Musician)</li>
+            <li>David Blaine (Magician)</li>
+            <li>Chef Gordon Ramsay (Chef)</li>
+            <li>Chef Jamie Oliver (Chef)</li>
+        </ul>
+    </section>
+    <section id="location">
+        <h2>Location</h2>
+        <p>The event will be held at the Tunnel Lounge. For more information, visit their <a href="https://thetunnellounge.com/">website</a>.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086217204614!2d-122.419415484681!3d37.7749292797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b0b0b0b%3A0x0!2zMzfCsDQ2JzI5LjgiTiAxMjLCsDI1JzEwLjkiVw!5e0!3m2!1sen!2sus!4v1633036800000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-wrapper">
+            <div class="gallery-container">
+                <div class="gallery-item" data-image="Images/bazaar.jpeg">
+                    <img src="Images/bazaar.jpeg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item" data-image="Images/bazaar-1.jpeg">
+                    <img src="Images/bazaar-1.jpeg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item" data-image="Images/crop.webp">
+                    <img src="Images/crop.webp" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item" data-image="Images/gallery4.webp">
+                    <img src="Images/gallery4.webp" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item" data-image="Images/gallery5.jpg">
+                    <img src="Images/gallery5.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            <div class="preview">
+                <img src="" alt="Full Size Image Preview">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Bite the Beat. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
