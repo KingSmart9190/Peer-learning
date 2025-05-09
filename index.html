@@ -17,7 +17,7 @@
         <h1>Bite the Beat</h1>
         <p>Welcome to Bite the Beat! Join us for a sensational fusion of music and food.</p>
         <p>Date: [Event Date] | Location: [Event Location]</p>
-        <button onclick="window.location.href='#tickets'">Get Tickets</button>
+        <button id="getticket" onclick="window.location.href='#tickets'">Get Tickets</button>
     </header>
     <nav id="sidebar">
         <ul>
@@ -48,22 +48,94 @@
             <li>12:30 AM - Closing Ceremony</li>
         </ul>
     </section>
+    
     <section id="performers">
         <h2>Performers & Chefs</h2>
         <p>We have an exciting lineup of performers and chefs for you:</p>
-        <ul>
-            <li>Sarkodie (Ghanaian Musician)</li>
-            <li>Stonebwoy (Ghanaian Musician)</li>
-            <li>Ed Sheeran (Musician)</li>
-            <li>David Blaine (Magician)</li>
-            <li>Chef Gordon Ramsay (Chef)</li>
-            <li>Chef Jamie Oliver (Chef)</li>
-        </ul>
+        <div class="card-container">
+            <!-- Performers -->
+            <div class="card">
+                <img src="Images\Sarkodie.jpeg" alt="Sarkodie">
+                <h3>Sarkodie</h3>
+                <p>Ghanaian Musician</p>
+            </div>
+            <div class="card">
+                <img src="Images\Black sheriff 🇬🇭.jpeg" alt="Black Sheriff">
+                <h3>Black Sheriff</h3>
+                <p>Ghanaian Musician</p>
+            </div>
+            <div class="card">
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=13651605113235523" height="215" width="216" frameborder="0" scrolling="no" ></iframe>
+                <h3>Burna Boy</h3>
+                <p>Nigerian Musician</p>
+            </div>
+            <div class="card">
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=687573068126879978" height="215" width="216" frameborder="0" scrolling="no" ></iframe>
+                <h3>Wizkid</h3>
+                <p>Nigerian Musician</p>
+            </div>
+            <div class="card">
+                <img src="Images\The toucher@Stonebwoy has earned 8nominations at the TGMA.jpeg" alt="Stonebwoy">
+                <h3>Stonebwoy</h3>
+                <p>Ghanaian Musician</p>
+            </div>
+            <div class="card">
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=179018153930998104" height="215" width="216" frameborder="0" scrolling="no" ></iframe>
+                <h3>Ed Sheeran</h3>
+                <p>Musician</p>
+            </div>
+            <div class="card">
+                <img src="Images\Vance Joy.jpeg" alt="Vance Joy">
+                <h3>Vance Joy</h3>
+                <p>Musician</p>
+            </div>
+        </div>
+        
+        <hr class="hr-divider">
+        
+        <div class="card-container">
+            <!-- Chefs -->
+            <div class="card">
+                <img src="Images\Gordon Ramsey.jpeg" alt="Chef Gordon Ramsay">
+                <h3>Chef Gordon Ramsay</h3>
+                <p>Chef</p>
+            </div>
+            <div class="card">
+                <img src="Images\Heston Blumenthal.jpeg" alt="Chef Heston Blumenthal">
+                <h3>Chef Heston Blumenthal</h3>
+                <p>Chef</p>
+            </div>
+            <div class="card">
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=4996249581577286" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
+                <h3>Chef Jamie Oliver</h3>
+                <p>Chef</p>
+            </div>
+            <div class="card">
+                <img src="Images\Nigella Lawson.jpeg" alt="Chef Nigella Lawson">
+                <h3>Chef Nigella Lawson</h3>
+                <p>Chef</p>
+            </div>
+
+            <hr class="hr-divider">
+
+
+            <div class="container">
+                <h1>Surprise Guest For The Occasion</h1>
+                <div class="card1" onclick="revealCard()">
+                  <img src="Images/David Blaine.jpeg" alt="David Blaine">
+                  <h3>David Blaine</h3>
+                  <p>Magician</p>
+                </div>
+                <p>Click to view the surprise guest for the night</p>
+              </div>
+              
+        </div>        
     </section>
+
     <section id="location">
         <h2>Location</h2>
         <p>The event will be held at the Tunnel Lounge. For more information, visit their <a href="https://thetunnellounge.com/">website</a>.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086217204614!2d-122.419415484681!3d37.7749292797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b0b0b0b%3A0x0!2zMzfCsDQ2JzI5LjgiTiAxMjLCsDI1JzEwLjkiVw!5e0!3m2!1sen!2sus!4v1633036800000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe id="event-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086217204614!2d-122.419415484681!3d37.7749292797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b0b0b0b%3A0x0!2zMzfCsDQ2JzI5LjgiTiAxMjLCsDI1JzEwLjkiVw!5e0!3m2!1sen!2sus!4v1633036800000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
     <section id="gallery">
         <h2>Gallery</h2>

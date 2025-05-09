@@ -30,3 +30,15 @@ galleryContainer.addEventListener('mouseover', function(event) {
 galleryContainer.addEventListener('mouseleave', function() {
     previewImage.style.display = 'none';
 });
+
+function revealCard() {
+    let card = document.querySelector(".card1");
+    card.classList.add("revealed");
+
+    // Set a timer to blur the card again after 5 seconds
+    setTimeout(() => {
+        card.classList.remove("revealed");
+    }, 5000);
+}
+
+
